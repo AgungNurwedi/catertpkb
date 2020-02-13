@@ -1,0 +1,109 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:id="@+id/LayPanel">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:id="@+id/Lay0"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/panelpanel"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/panelpara1"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/panelpara2"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Lay1"
+        android:layout_below="@+id/Lay0">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="366dp"
+            android:layout_height="59dp"
+            android:weightSum="1"
+            android:id="@+id/Lay11"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="___"
+                android:id="@+id/textPanelCD"
+                android:textColor="#01048f" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/Lay12">
+
+                <Button
+                    android:id="@+id/bsimpanPanel"
+                    android:text="Simpan"
+                    android:layout_width="wrap_content"
+                    android:onClick="UpdatePanel"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/panelCD"
+                android:layout_width="96dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="5dp" />
+
+            <EditText
+                android:id="@+id/panelNM"
+                android:layout_width="95dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Lay2"
+        android:layout_below="@+id/Lay1">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewPanel"
+
+            android:focusable="true" />
+    </LinearLayout>
+
+
+</LinearLayout>

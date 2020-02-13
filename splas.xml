@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckgrnd"
+    tools:context="com.tpkb.mascater.splas">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:contentDescription="@string/spasi"
+        android:src="@drawable/ic_tpkb" />
+
+    <TextView
+        android:id="@+id/txApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txVer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="@string/mascater"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp"
+        android:text="Versi"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/login01"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="1"
+
+        >
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/logo"
+            android:layout_marginBottom="50dip"
+            android:src="@drawable/logo_polos" />
+
+        <TextView
+            android:id="@+id/namaperusahaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="3"
+            android:text="@string/Heder1"
+            android:textColor="#201fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="3"
+            android:text="@string/Heder2"
+            android:textColor="#201fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/Versiku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="3"
+            android:text="@string/versi"
+            android:textColor="#201fff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:background="@drawable/bg01"
+            android:hint="@string/user_id"
+            android:inputType="text"
+            android:textColor="#201fff"
+            android:textColorHint="#201fff"
+            android:textSize="15sp"
+            android:importantForAutofill="no" />
+
+        <requestFocus />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:passwordToggleEnabled="true" >
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg01"
+            android:hint="@string/zpassword"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#201fff"
+            android:textSize="15sp"
+            android:importantForAutofill="no" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Login Button -->
+        <!-- android:background="@drawable/tombol" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dip"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg02"
+                android:onClick="signup"
+                android:text="@string/xlogin"
+                android:textColor="#201fff" />
+
+            <Switch
+                android:id="@+id/swoffon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dip"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:text="@string/off_online"
+                android:textColor="#201fff"
+                android:textColorHint="@android:color/background_light"
+                android:textColorLink="#201fff"
+                android:textCursorDrawable="@android:color/holo_blue_light"
+                android:textOff="@string/offline"
+                android:textOn="@string/online"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

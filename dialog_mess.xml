@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/biru" />
+
+    <TextView
+        android:id="@+id/texttiket"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/biru"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/texttiket"
+        android:layout_marginTop="13dp"
+        android:text=" Ok " />
+
+    <Button
+        android:id="@+id/dialogButtonCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dialogButtonOK"
+        android:layout_toEndOf="@+id/dialogButtonOK"
+        android:layout_toRightOf="@+id/dialogButtonOK"
+        android:text=" Copy No Ticket" />
+
+
+</RelativeLayout>

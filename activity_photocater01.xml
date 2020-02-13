@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/baris1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.02"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <TextView
+            android:id="@+id/tDSML_TgalCtt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44"
+            android:text="TextView"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,NestedWeights" />
+
+        <TextView
+            android:id="@+id/tDSML_Digit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44"
+            android:text="TextView"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,NestedWeights" />
+
+        <TextView
+            android:id="@+id/tDSML_TRID"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.44"
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tDSML_Nopel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.18"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/phototran"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tDSML_Nama"
+            style="@android:style/Widget.DeviceDefault.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.44"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/photonama"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Baris2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.05"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/tDSML_Alamat"
+            style="@android:style/Widget.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/photoalamat"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Baris3"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tDSML_tarif"
+            style="@android:style/Widget.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="0.58"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/phototarif"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <EditText
+
+            android:id="@+id/tDSML_HP"
+            android:layout_width="107dp"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:inputType="textNoSuggestions|number"
+            android:labelFor="@+id/tDSML_HP"
+            android:paddingRight="5dp"
+            android:selectAllOnFocus="true"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/holo_red_dark"
+            android:textColorLink="@android:color/white"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Baris4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <ImageView
+            android:id="@+id/photoSurvey1"
+            android:layout_width="164dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/descphoto"
+            android:padding="2dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/silang"
+            tools:ignore="NestedWeights" />
+
+        <ImageView
+            android:id="@+id/photoSurvey"
+            android:layout_width="164dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/descphoto"
+            android:padding="2dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/silang"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Baris5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:id="@+id/Baris6a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Baris6b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:weightSum="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/tDSML_Nomet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:text="@string/nomet"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+                android:elevation="1dp"
+                tools:ignore="UnusedAttribute">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/awal"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tDSML_Awal"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:foregroundGravity="right"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/nol"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="RtlHardcoded" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+                android:elevation="1dp"
+                tools:ignore="UnusedAttribute">
+
+                <TextView
+                    android:id="@+id/textViewal"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/akhir"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/tDSML_Akhir"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="right"
+                    android:hint="@string/angka_akhir"
+                    android:inputType="number"
+                    android:paddingRight="5dp"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorLink="@android:color/white"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+                android:elevation="1dp"
+                tools:ignore="UnusedAttribute">
+
+                <TextView
+                    android:id="@+id/textViewkbk"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/kubik"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tDSML_Kubik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/nol"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewNom"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="20dp"
+                    android:text="Nominal"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tDSML_Nominal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingTop="20dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/nol"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textTung"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/piutang"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tDSML_piutang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingTop="20dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/nol"
+                    android:textAlignment="gravity"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="22dp">
+
+                <TextView
+                    android:id="@+id/textTot"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/total"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tDSML_Total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingTop="20dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/nol"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/go1"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@android:color/holo_red_dark">
+
+        <Spinner
+            android:id="@+id/spinnerbad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="2dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/go2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessLeaf">
+
+        <TextView
+            android:id="@+id/tDSML_Lat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/phptolat"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tDSML_Long"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:text="@string/photolong"
+            android:textColor="@android:color/holo_red_dark" />
+    </TableRow>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/bxbtn"
+        android:layout_width="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnphoto"
+            android:layout_weight="0.85"
+            tools:text="Simpan"
+            android:text="@string/photobtnsimpan"
+            style="@android:style/Widget.Button"
+            android:gravity="center" />
+
+        <FrameLayout android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/progressBar2"
+                android:layout_weight="0.73"
+                tools:ignore="ObsoleteLayoutParam" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnGPS"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="toggleBestUpdates"
+            android:text="@string/resume" />
+
+    </LinearLayout>
+</LinearLayout>
